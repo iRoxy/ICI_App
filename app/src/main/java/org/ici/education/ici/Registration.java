@@ -7,38 +7,35 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-
-    Button IGAAPBtn;
-    Button ELLBtn;
+public class Registration extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_registration);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        IGAAPBtn = (Button) findViewById(R.id.IG44PBtn);
-        IGAAPBtn.setOnClickListener(new View.OnClickListener() {
+        // Register user button
+        Button ellRegBtn = (Button) findViewById(R.id.ellRegBtn);
+        ellRegBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, IGAAPForm.class);
-                startActivity(intent);
+                startActivityForResult(new Intent(Registration.this, ELLRegistration.class), 2);
             }
         });
 
-        ELLBtn = (Button) findViewById(R.id.ELLBtn);
-        ELLBtn.setOnClickListener(new View.OnClickListener() {
+        // View registered users button
+        Button ellViewUserBtn = (Button) findViewById(R.id.ellViewUserBtn);
+        ellViewUserBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Login.class);
-                startActivity(intent);
+                startActivity(new Intent(Registration.this, UserListView.class));
+
             }
         });
     }
+
 }

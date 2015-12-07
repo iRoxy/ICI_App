@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.ici.education.ici" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,28 +21,33 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".login_screen"
-            android:label="@string/title_activity_login_screen"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity
             android:name=".Login"
             android:label="@string/title_activity_login"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:name=".Events"
-            android:label="@string/title_activity_events"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity
-            android:name=".IgaapForm"
-            android:label="@string/title_activity_igaap_form"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity
             android:name=".IGAAPForm"
             android:label="@string/title_activity_igaapform"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Registration"
+            android:label="@string/title_activity_registration"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".IGAAPRegistration"
+            android:label="@string/title_activity_igaapregistration"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ELLRegistration"
+            android:label="@string/title_activity_ellregistration"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".UserListView"
+            android:label="@string/title_activity_user_list_view"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>

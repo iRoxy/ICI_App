@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -31,6 +32,16 @@ public class UserListView extends ListActivity {
 
         listView = (ListView) findViewById(android.R.id.list);
         listOfUsers = new ArrayList<String>();
+
+        // Send To Server Button
+        Button sendToServerBtn = (Button) findViewById(R.id.sendServerBtn);
+        sendToServerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Server Code Here
+            }
+        });
+
 
 
         sharedPref = PreferenceManager.getDefaultSharedPreferences(this);

@@ -41,13 +41,13 @@
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:name=".ELLRegistration"
-            android:label="@string/title_activity_ellregistration"
+            android:name=".UserListView"
+            android:label="@string/title_activity_user_list_view"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:name=".UserListView"
-            android:label="@string/title_activity_user_list_view"
+            android:name=".ELLRegistration"
+            android:label="@string/title_activity_ellregistration"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>

@@ -99,7 +99,6 @@
                     android:text="@string/pick_date"
                     android:onClick="showDatePickerDialog" />
 
-
             </LinearLayout>
 
             <LinearLayout

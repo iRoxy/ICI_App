@@ -1,16 +1,16 @@
 <resources>
     <string name="app_name" translatable="false">ICI</string>
     <string name="action_settings">Settings</string>
-    <string name="mainPP_IGAAP">I-GAAP Form</string>
-    <string name="mainPP_ELL">ELL</string>
-    <string name="title_activity_login_screen">login_screen</string>
-    <string name="title_activity_login">Login</string>
+    <string name="mainPP_IGAAP" translatable="false">I-GAAP Form</string>
+    <string name="mainPP_ELL" translatable="false">ELL</string>
+    <string name="title_activity_login_screen" translatable="false">login_screen</string>
+    <string name="title_activity_login" translatable="false">Login</string>
     <string name="login_username">Username</string>
     <string name="login_password">Password</string>
-    <string name="login_btn">Login</string>
-    <string name="title_activity_igaap_form">IgaapForm</string>
-    <string name="title_activity_igaapform">IGAAPForm</string>
-    <string name="title_activity_registration">Registration</string>
+    <string name="login_btn" translatable="false">Login</string>
+    <string name="title_activity_igaap_form" translatable="false">IgaapForm</string>
+    <string name="title_activity_igaapform" translatable="false">IGAAPForm</string>
+    <string name="title_activity_registration" translatable="false">Registration</string>
     <string name="submit">Submit</string>
     <string name="sendToServer">Send To Server</string>
 
@@ -21,16 +21,16 @@
     <!-- IGAAP Form -->
     <string name="agree_btn">Agree</string>
     <string name="disagree_btn">Disagree</string>
-    <string name="title_activity_igaapregistration">IGAAPRegistration</string>
+    <string name="title_activity_igaapregistration" translatable="false">IGAAPRegistration</string>
     
     <!-- IGAAP Registration Form -->
     <string name="student_lastname">Student\'s Last Name</string>
     <string name="student_firstname">Student\'s First Name</string>
     <string name="homeroom_teacher">Homeroom Teacher\'s Name</string>
-    <string name="school1">School 1</string>
-    <string name="school2">School 2</string>
-    <string name="school3">School 3</string>
-    <string name="school4">School 4</string>
+    <string name="school1" translatable="false">School 1</string>
+    <string name="school2" translatable="false">School 2</string>
+    <string name="school3" translatable="false">School 3</string>
+    <string name="school4" translatable="false">School 4</string>
     <string name="school_attending">School Attending</string>
     <string-array name="school_arrays">
         <item>@string/school1</item>
@@ -54,9 +54,9 @@
     <string name="asian">Asian</string>
     <string name="white">White</string>
     <string name="black">Black/African American</string>
-    <string name="hawaiian">Hawaiian/Pacific Islander</string>
+    <string name="hawaiian" translatable="false">Hawaiian/Pacific Islander</string>
     <string name="other">Other</string>
-    <string name="ethnicity">Ethnicity</string>
+    <string name="ethnicity" translatable="false">Ethnicity</string>
     <string-array name="ethnicity_array">
         <item>@string/nativeamerican</item>
         <item>@string/asian</item>
@@ -74,8 +74,8 @@
     <string name="email">Email Address</string>
     <string name="date">Date</string>
     <string name="parents_signature">Parent\'s Signature</string>
-    <string name="title_activity_ellregistration">ELLRegistration</string>
-    <string name="title_activity_user_list_view">UserListView</string>
+    <string name="title_activity_ellregistration" translatable="false">ELLRegistration</string>
+    <string name="title_activity_user_list_view" translatable="false">UserListView</string>
 
     <!-- ELL Registration -->
     <string name="firstname">First Name</string>
@@ -83,39 +83,39 @@
     <string name="pick_date">Pick your birth date</string>
     <string name="birth_month">Birth Month</string>
     <string name="birth_date">Birth Date</string>
-    <string name="password_group">Password Group</string>
-    <string name="curr_notes">LL Curriculum Notes</string>
-    <string name="jan">01</string>
-    <string name="feb">02</string>
-    <string name="mar">03</string>
+    <string name="password_group">Group</string>
+    <string name="curr_notes">Notes</string>
+    <string name="jan" translatable="false">01</string>
+    <string name="feb" translatable="false">02</string>
+    <string name="mar" translatable="false">03</string>
     <string name="apr">04</string>
-    <string name="may">05</string>
-    <string name="june">06</string>
-    <string name="july">07</string>
+    <string name="may" translatable="false">05</string>
+    <string name="june" translatable="false">06</string>
+    <string name="july" translatable="false">07</string>
     <string name="aug">08</string>
-    <string name="sep">09</string>
-    <string name="oct">10</string>
-    <string name="nov">11</string>
-    <string name="dec">12</string>
-    <string name="day13">13</string>
-    <string name="day14">14</string>
-    <string name="day15">15</string>
-    <string name="day16">16</string>
-    <string name="day17">17</string>
-    <string name="day18">18</string>
-    <string name="day19">19</string>
-    <string name="day20">20</string>
-    <string name="day21">21</string>
-    <string name="day22">22</string>
-    <string name="day23">23</string>
-    <string name="day24">24</string>
-    <string name="day25">25</string>
-    <string name="day26">26</string>
-    <string name="day27">27</string>
-    <string name="day28">28</string>
-    <string name="day29">29</string>
-    <string name="day30">30</string>
-    <string name="day31">31</string>
+    <string name="sep" translatable="false">09</string>
+    <string name="oct" translatable="false">10</string>
+    <string name="nov" translatable="false">11</string>
+    <string name="dec" translatable="false">12</string>
+    <string name="day13" translatable="false">13</string>
+    <string name="day14" translatable="false">14</string>
+    <string name="day15" translatable="false">15</string>
+    <string name="day16" translatable="false">16</string>
+    <string name="day17" translatable="false">17</string>
+    <string name="day18" translatable="false">18</string>
+    <string name="day19" translatable="false">19</string>
+    <string name="day20" translatable="false">20</string>
+    <string name="day21" translatable="false">21</string>
+    <string name="day22" translatable="false">22</string>
+    <string name="day23" translatable="false">23</string>
+    <string name="day24" translatable="false">24</string>
+    <string name="day25" translatable="false">25</string>
+    <string name="day26" translatable="false">26</string>
+    <string name="day27" translatable="false">27</string>
+    <string name="day28" translatable="false">28</string>
+    <string name="day29" translatable="false">29</string>
+    <string name="day30" translatable="false">30</string>
+    <string name="day31" translatable="false">31</string>
 
     <string-array name="birthmonth_array">
         <item>@string/jan</item>
@@ -164,10 +164,10 @@
         <item>@string/day30</item>
         <item>@string/day31</item>
     </string-array>
-    <string name="group1">Group 1</string>
-    <string name="group2">Group 2</string>
-    <string name="group3">Group 3</string>
-    <string name="group4">Group 4</string>
+    <string name="group1" translatable="false">Group 1</string>
+    <string name="group2" translatable="false">Group 2</string>
+    <string name="group3" translatable="false">Group 3</string>
+    <string name="group4" translatable="false">Group 4</string>
     <string-array name="password_groups">
         <item>@string/group1</item>
         <item>@string/group2</item>
@@ -175,10 +175,10 @@
         <item>@string/group4</item>
     </string-array>
 
-    <string name="currNotes1">Lang Level 1</string>
-    <string name="currNotes2">Lang Level 2</string>
-    <string name="currNotes3">Lang Level 1</string>
-    <string name="currNotes4">Lang Level 1</string>
+    <string name="currNotes1" translatable="false">Lang Level 1</string>
+    <string name="currNotes2" translatable="false">Lang Level 2</string>
+    <string name="currNotes3" translatable="false">Lang Level 1</string>
+    <string name="currNotes4" translatable="false">Lang Level 1</string>
 
     <string-array name="currnotes_array">
         <item>@string/currNotes1</item>

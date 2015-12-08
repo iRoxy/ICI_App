@@ -26,7 +26,6 @@ public class ELLRegistration extends FragmentActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ellregistration);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         final EditText fnEdt = (EditText) findViewById(R.id.firstNameEdt);
         final EditText lnEdt = (EditText) findViewById(R.id.lastNameEdt);

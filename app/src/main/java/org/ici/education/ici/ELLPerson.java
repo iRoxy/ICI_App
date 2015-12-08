@@ -11,4 +11,11 @@ public class ELLPerson
     private Date birthday;
 
 
+    public ELLPerson(String _fName, String _mName, String _lName, String _email, Date birthday, String _language, String _notes, String county)
+    {
+        fName = _fName;
+        mName = _mName;
+        lName = _lName;
+
+    }
 }

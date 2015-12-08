@@ -49,6 +49,14 @@ public class ELLRegistration extends AppCompatActivity {
             }
         });
 
+        Button sendToServerBtn = (Button) findViewById(R.id.sendServerBtn);
+        sendToServerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Server Code Here
+            }
+        });
+
     }
 
 

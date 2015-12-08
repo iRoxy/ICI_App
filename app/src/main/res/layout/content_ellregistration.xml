@@ -79,24 +79,7 @@
                     android:layout_weight="0.94" />
             </LinearLayout>
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/ellrow4">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/birth_month"
-                    android:id="@+id/birthMonthTxt" />
-
-                <Spinner
-                    android:layout_width="wrap_content"
-                    android:layout_height="43dp"
-                    android:id="@+id/birthMonthSpinner"
-                    android:entries="@array/birthmonth_array"/>
-            </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -110,11 +93,13 @@
                     android:text="@string/birth_date"
                     android:id="@+id/birthDateTxt" />
 
-                <Spinner
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="43dp"
-                    android:id="@+id/birthDateSpimmer"
-                    android:entries="@array/birth_date"/>
+                    android:layout_height="wrap_content"
+                    android:text="@string/pick_date"
+                    android:onClick="showDatePickerDialog" />
+
+
             </LinearLayout>
 
             <LinearLayout

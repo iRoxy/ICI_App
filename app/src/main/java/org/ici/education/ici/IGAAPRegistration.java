@@ -20,7 +20,7 @@ public class IGAAPRegistration extends AppCompatActivity {
     EditText homeroomTeacher;
     Spinner schoolSpin;
     EditText stdGender;
-    EditText stdAge;
+    Spinner stdAge;
     Spinner ethnicity;
     EditText homeaddress;
     EditText city;
@@ -30,7 +30,6 @@ public class IGAAPRegistration extends AppCompatActivity {
     EditText emailaddress;
     EditText signature;
     EditText zipcode;
-    EditText date;
 
 
     @Override
@@ -49,8 +48,8 @@ public class IGAAPRegistration extends AppCompatActivity {
         stdFirstName = (EditText) findViewById(R.id.stdFirstNameEdt);
         homeroomTeacher = (EditText) findViewById(R.id.teacherNameEdt);
         schoolSpin = (Spinner) findViewById(R.id.schoolSpin);
-        stdGender = (EditText) findViewById(R.id.genderEdt);
-        stdAge = (EditText) findViewById(R.id.ageEdt);
+//        stdGender = (EditText) findViewById(R.id.genderEdt);
+        stdAge = (Spinner) findViewById(R.id.ageSpin);
         ethnicity = (Spinner) findViewById(R.id.ethnicitySpin);
         homeaddress = (EditText) findViewById(R.id.homeaddressEdt);
         city = (EditText) findViewById(R.id.cityEdt);
@@ -60,7 +59,6 @@ public class IGAAPRegistration extends AppCompatActivity {
         phonenumber = (EditText) findViewById(R.id.phonenumberEdt);
         emailaddress = (EditText) findViewById(R.id.emailaddressEdt);
         signature = (EditText) findViewById(R.id.signatureEdt);
-        date = (EditText) findViewById(R.id.dateEdt);
 
 
         // Submit button
@@ -81,7 +79,7 @@ public class IGAAPRegistration extends AppCompatActivity {
         editor.putString("homeroomteacher", homeroomTeacher.getText().toString());
         editor.putString("stdschool", schoolSpin.getSelectedItem().toString()); // SchoolSpin
         editor.putString("stdgender", stdGender.getText().toString());
-        editor.putString("stdage", stdAge.getText().toString());
+        editor.putString("stdage", stdAge.getSelectedItem().toString());
         editor.putString("ethnicity", ethnicity.getSelectedItem().toString()); // EthnicitySpin
         editor.putString("homeaddress", homeaddress.getText().toString());
         editor.putString("city", city.getText().toString());
@@ -89,9 +87,8 @@ public class IGAAPRegistration extends AppCompatActivity {
         editor.putString("parentslastname", parentsLastName.getText().toString());
         editor.putString("parentsfirstname", parentsFirstName.getText().toString());
         editor.putString("phonenumber", phonenumber.getText().toString());
-        editor.putString("emailaddress", emailaddress.getText().toString());
+        editor.putString("parentemailaddress", emailaddress.getText().toString());
         editor.putString("signature", signature.getText().toString());
-        editor.putString("date", date.getText().toString());
 
     }
 

@@ -15,7 +15,8 @@
         android:id="@+id/iciLogoView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
+        android:src="@drawable/icilogo"
+        android:layout_marginTop="20dp" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -23,7 +24,7 @@
         android:layout_height="200dp"
         android:layout_below="@+id/iciLogoView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="83dp">
+        android:layout_marginTop="30dp">
 
         <Button
             android:layout_width="wrap_content"

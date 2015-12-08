@@ -34,12 +34,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/student_lastname"
-                    android:id="@+id/stdLastNameTxt" />
+                    android:id="@+id/stdLastNameTxt"/>
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/stdLastNameEdt"
+                    android:imeOptions="actionNext"
                     android:layout_weight="0.94" />
             </LinearLayout>
 
@@ -59,6 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/stdFirstNameEdt"
+                    android:imeOptions="actionNext"
                     android:layout_weight="0.94" />
             </LinearLayout>
 
@@ -79,6 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/teacherNameEdt"
+                    android:imeOptions="actionNext"
                     android:layout_weight="0.94" />
             </LinearLayout>
 
@@ -114,11 +117,26 @@
                     android:text="@string/gender"
                     android:id="@+id/genderTxt" />
 
-                <EditText
+                <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/genderEdt"
-                    android:layout_weight="0.94" />
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male"
+                        android:id="@+id/radioButtonMale"
+                        android:layout_marginLeft="15dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"
+                        android:id="@+id/radioButtonFemale"
+                        android:layout_marginLeft="15dp"/>
+
+                </RadioGroup>
 
             </LinearLayout>
 
@@ -134,11 +152,11 @@
                     android:text="@string/age"
                     android:id="@+id/ageTxt" />
 
-                <EditText
+                <Spinner
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/ageEdt"
-                    android:layout_weight="0.94" />
+                    android:layout_height="43dp"
+                    android:id="@+id/ageSpin"
+                    android:entries="@array/age_array"/>
 
             </LinearLayout>
 

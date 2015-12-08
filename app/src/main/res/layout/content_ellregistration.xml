@@ -113,7 +113,7 @@
                 <Spinner
                     android:layout_width="wrap_content"
                     android:layout_height="43dp"
-                    android:id="@+id/birthDateSpimmer"
+                    android:id="@+id/birthDateSpinner"
                     android:entries="@array/birth_date"/>
             </LinearLayout>
 

@@ -34,6 +34,7 @@ public class IGAAPForm extends AppCompatActivity {
                 */
 
 
+
         // Agree Button
         Button agreeBtn = (Button) findViewById(R.id.agreeBtn);
         agreeBtn.setOnClickListener(new View.OnClickListener() {

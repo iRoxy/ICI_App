@@ -1,5 +1,6 @@
 package org.ici.education.ici;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -10,14 +11,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
+    private Context caller;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        caller = getApplicationContext();
+
         setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -46,7 +52,9 @@ public class Login extends AppCompatActivity {
 
                 String passwordStr = passwordEdt.getText().toString();
                 editor.putString("password", passwordStr);
+
                 startActivity(new Intent(Login.this, Registration.class));
+
             }
         });
     }

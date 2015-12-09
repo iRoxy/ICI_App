@@ -1,6 +1,7 @@
 package org.ici.education.ici;
 
 import android.app.ListActivity;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -14,6 +15,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 
 public class UserListView extends ListActivity {
@@ -38,7 +41,20 @@ public class UserListView extends ListActivity {
         sendToServerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 // Server Code Here
+                Context ctx = getApplicationContext();
+                ICIPostTask task = new ICIPostTask(ctx);
+                try {
+                    String host = "www.icieducates.org/mobile.php";
+                    String s = "http://" + host;
+                    Log.i("ICIPost", "url=" + s);
+                    URL url = new URL(s);
+                    task.execute(url);
+                } catch (MalformedURLException e) {
+                    Log.e("ICIPost", "malformed url");
+                    e.printStackTrace();
+                }
             }
         });
 

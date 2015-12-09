@@ -2,20 +2,22 @@ package org.ici.education.ici;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v4.app.DialogFragment;
 import android.os.Bundle;
 import android.widget.DatePicker;
 
 import java.util.Calendar;
 
-/**
- * Created by al2king on 12/8/2015.
- */
+
 public class DatePickerFragment extends DialogFragment
         implements DatePickerDialog.OnDateSetListener {
 
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+
         // Use the current date as the default date in the picker
         final Calendar c = Calendar.getInstance();
         int year = c.get(Calendar.YEAR);
@@ -28,5 +30,6 @@ public class DatePickerFragment extends DialogFragment
 
     public void onDateSet(DatePicker view, int year, int month, int day) {
         // Do something with the date chosen by the user
+
     }
 }

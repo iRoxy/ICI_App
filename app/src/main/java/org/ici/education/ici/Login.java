@@ -21,9 +21,6 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        caller = getApplicationContext();
-
         setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -40,7 +37,7 @@ public class Login extends AppCompatActivity {
         TextView passwordTxt = (TextView) findViewById(R.id.passwordTxtView);
         final EditText passwordEdt = (EditText) findViewById(R.id.passwordTxtEdit);
 
-        // TODO: AUTHENTICATION? NAH...but will check if fields are not empty
+        caller = getApplicationContext();
 
         // login button and listener
         Button loginBtn = (Button) findViewById(R.id.loginBtn);
@@ -53,8 +50,18 @@ public class Login extends AppCompatActivity {
                 String passwordStr = passwordEdt.getText().toString();
                 editor.putString("password", passwordStr);
 
-                startActivity(new Intent(Login.this, Registration.class));
-
+                //replaces web server authentication due to inability to implement at this time
+                if (usernameStr.equals("adminstaff") && passwordStr.equals("12345"))
+                {
+                    editor.commit();
+                    startActivity(new Intent(Login.this, Registration.class));
+                }
+                else
+                {
+                    editor.clear();
+                    Toast.makeText(caller, "invalid login", Toast.LENGTH_LONG).show();
+                }
+                //startActivity(new Intent(Login.this, Registration.class));
             }
         });
     }
